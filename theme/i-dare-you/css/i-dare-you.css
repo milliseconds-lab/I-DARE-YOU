@@ -1,0 +1,296 @@
+:root {
+    --color-main: #253857;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray: #999999;
+}
+
+/*-- Reset. --*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section {
+    display: block
+}
+
+audio, canvas, progress, video {
+    display: inline-block
+}
+
+a, abbr, address, article, aside, audio, b, blockquote, body, br, button, canvas, caption, cite, code, col, data, datalist, dd, del, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, img, input, ins, kbd, label, legend, li, main, mark, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, select, small, span, strong, sub, sup, table, td, textarea, th, time, u, ul, var, video {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
+html {
+    -ms-content-zooming: none;
+    -ms-touch-action: pan-x pan-y
+}
+
+body {
+    -webkit-text-size-adjust: none
+}
+
+fieldset, img {
+    border: 0 none
+}
+
+dl, ul, ol, menu, li {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+    content: none
+}
+
+input, select, textarea, button {
+    font-size: 100%;
+    vertical-align: middle;
+    outline: none
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input[type="text"], input[type="tel"], input[type="password"], input[type="submit"], input[type="search"], input[type="number"] {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 transparent inset;
+    transition: color .1s ease, border-color .1s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input:checked[type="checkbox"] {
+    background-color: var(--color-black);
+    -webkit-appearance: checkbox
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="file"] {
+    -webkit-appearance: button;
+    border-radius: 0
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+input[type="date"] {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input[type="date"]:invalid::-webkit-datetime-edit {
+    color: var(--color-black)
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: var(--color-black)
+}
+
+input[type="date"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: transparent
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    resize: none
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a, a:active, a:hover {
+    text-decoration: none
+}
+
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+    font-weight: 400
+}
+
+i {
+    font-style: normal
+}
+
+a, button {
+    position: relative;
+    -webkit-tap-highlight-color: transparent
+}
+
+input {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1
+}
+
+a {
+    color: var(--color-black);
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: none
+}
+
+.blind {
+    overflow: hidden;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0
+}
+
+html, body, th, td, input, select, textarea, button {
+    color: var(--color-black);
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    @include font-initial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5rem
+}
+
+select, button {
+    user-select: none;
+    -webkit-user-select: none
+}
+
+::-moz-selection {
+    background-color: var(--color-main);
+    text-shadow: none;
+    color: var(--color-white)
+}
+
+::selection {
+    background-color: var(--color-main);
+    text-shadow: none;
+    color: var(--color-white)
+}
+
+input[autocomplete="off"]::-webkit-contacts-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    pointer-events: none
+}
+
+.visually_hidden {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none
+}
+
+nav#global-navigation {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav#global-navigation h1 {
+    color: var(--color-black);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+nav#global-navigation #gn-menu {
+    margin-left: 80px;
+}
+
+nav#global-navigation #gn-menu ul {
+    display: flex;
+}
+
+nav#global-navigation #gn-menu ul li + li {
+    margin-left: 10px;
+}
+
+main.main {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+main.main h2 {
+    color: var(--color-main);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+footer#global-footer {
+
+}
+
+footer#global-footer h1#copyright {
+    color: var(--color-gray);
+    font-size: 12px;
+    line-height: 1.5;
+}
